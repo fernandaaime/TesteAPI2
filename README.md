@@ -2,7 +2,7 @@
 
 Este projeto contém testes automatizados da API desenvolvidos com o Postman e executados com o Newman localmente e via GitHub Actions (CI/CD).
 
-Frameworks utilizados para executar o projeto localmente:
+Ferramentas utilizados para executar o projeto localmente:
 
 Postman - Para requisição dos métodos GET, POST, PUT e DELETE. Criação de Collections e Ambientes 
 VS Code - Necessário para criar um documento em yml e subir para workflow do github 

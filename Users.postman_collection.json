@@ -20,6 +20,7 @@
 							"});\r",
 							"\r",
 							"// Só executa o teste do _id se a resposta for válida\r",
+							"\r",
 							"pm.test(\"Retorno contém id do usuário\", function () {\r",
 							"    if (pm.response.code === 201 || pm.response.code === 200) {\r",
 							"        let jsonData = pm.response.json();\r",
@@ -42,6 +43,16 @@
 						"type": "text/javascript",
 						"packages": {}
 					}
+				},
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							"pm.variables.set(\"randomInt\", Math.floor(Math.random() * 1000000));"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
 				}
 			],
 			"request": {
@@ -60,7 +71,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n  \"nome\": \"Mauro\",\r\n  \"email\": \"mauro.gomes@gmail.com\",\r\n  \"password\": \"123456\",\r\n  \"administrador\": \"true\"\r\n}",
+					"raw": "{\r\n  \"nome\": \"Mauro\",\r\n  \"email\": \"mauro.{{randomInt}}@gmail.com\",\r\n  \"password\": \"123456\",\r\n  \"administrador\": \"true\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"

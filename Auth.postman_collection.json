@@ -33,7 +33,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n  \"email\": \"helena.gomes@gmail.com\",\r\n  \"password\": \"123456\"\r\n}",
+					"raw": "{\r\n  \"email\": \"mauro.gomes@gmail.com\",\r\n  \"password\": \"123456\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"

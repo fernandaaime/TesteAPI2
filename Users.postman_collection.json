@@ -60,7 +60,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n  \"nome\": \"Isa\",\r\n  \"email\": \"isa.gomes@gmail.com\",\r\n  \"password\": \"123456\",\r\n  \"administrador\": \"true\"\r\n}",
+					"raw": "{\r\n  \"nome\": \"Mauro\",\r\n  \"email\": \"mauro.gomes@gmail.com\",\r\n  \"password\": \"123456\",\r\n  \"administrador\": \"true\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -170,13 +170,13 @@
 					}
 				],
 				"url": {
-					"raw": "{{base_url}}/usuarios/Yph5pTnfxOl2BM3R",
+					"raw": "{{base_url}}/usuarios/{{userId}}",
 					"host": [
 						"{{base_url}}"
 					],
 					"path": [
 						"usuarios",
-						"Yph5pTnfxOl2BM3R"
+						"{{userId}}"
 					]
 				}
 			},
@@ -207,7 +207,7 @@
 					"listen": "prerequest",
 					"script": {
 						"exec": [
-							"pm.environment.set(\"email_unico\", `teste_${Date.now()}@exemplo.com`);"
+							""
 						],
 						"type": "text/javascript",
 						"packages": {}
@@ -230,7 +230,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n  \"nome\": \"Helena Gomes\",\r\n  \"email\": \"helena.gomes@gmail.com\",\r\n  \"password\": \"123456\",\r\n  \"administrador\": \"true\"\r\n}",
+					"raw": "{\r\n  \"nome\": \"Mauro\",\r\n  \"email\": \"mauro.gomes@gmail.com\",\r\n  \"password\": \"123456\",\r\n  \"administrador\": \"true\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
